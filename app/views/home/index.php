@@ -1,7 +1,17 @@
 <!-- Hero Section -->
-<section class="hero-gradient min-h-screen flex items-center relative overflow-hidden">
-    <!-- Background Pattern -->
-    <div class="absolute inset-0 wood-texture opacity-10"></div>
+<section class="min-h-screen flex items-center relative overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" 
+             alt="Floresta de madeira" 
+             class="w-full h-full object-cover">
+    </div>
+    
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black/60"></div>
+    
+    <!-- Gradient Overlay for better text readability -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/80"></div>
     
     <!-- Animated Background Elements -->
     <div class="absolute inset-0">
@@ -14,11 +24,11 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <!-- Hero Content -->
             <div class="text-center lg:text-left" x-data="animatedText">
-                <h1 class="font-montserrat font-bold text-4xl md:text-5xl lg:text-6xl hero-text mb-6 leading-tight">
+                <h1 class="font-montserrat font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-6 leading-tight">
                     <span class="block" x-text="currentWord"></span>
                     <span class="text-dourado-400">Tronco Forte</span>
                 </h1>
-                <p class="text-xl md:text-2xl hero-subtitle mb-8 max-w-2xl mx-auto lg:mx-0">
+                <p class="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto lg:mx-0">
                     Há mais de 30 anos fornecendo madeiras de qualidade superior com 
                     <span class="text-dourado-400 font-semibold">compromisso ambiental</span> 
                     e excelência no atendimento.
@@ -26,27 +36,27 @@
                 
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <a href="/catalogo" class="btn-primary text-lg px-8 py-4">
+                    <a href="/catalogo" class="bg-dourado-500 hover:bg-dourado-600 text-white font-semibold text-lg px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg">
                         Ver Catálogo
                     </a>
-                    <a href="#calculadora" class="btn-outline text-lg px-8 py-4 hero-btn-outline">
+                    <a href="#calculadora" class="border-2 border-white text-white hover:bg-white hover:text-carvao-900 font-semibold text-lg px-8 py-4 rounded-xl transition-all duration-300">
                         Calcular Orçamento
                     </a>
                 </div>
 
                 <!-- Stats -->
-                <div class="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-cremoso-200/30">
+                <div class="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-white/30">
                     <div class="text-center" x-data="counter(30)">
                         <div class="text-3xl font-bold text-dourado-400 mb-2" x-text="Math.floor(count)">0</div>
-                        <div class="hero-stats-text text-sm">Anos de<br>Experiência</div>
+                        <div class="text-white text-sm">Anos de<br>Experiência</div>
                     </div>
                     <div class="text-center" x-data="counter(1500)">
                         <div class="text-3xl font-bold text-dourado-400 mb-2" x-text="Math.floor(count)">0</div>
-                        <div class="hero-stats-text text-sm">Projetos<br>Realizados</div>
+                        <div class="text-white text-sm">Projetos<br>Realizados</div>
                     </div>
                     <div class="text-center" x-data="counter(90)">
                         <div class="text-3xl font-bold text-dourado-400 mb-2" x-text="Math.floor(count)">0</div>
-                        <div class="hero-stats-text text-sm">Tipos de<br>Madeira</div>
+                        <div class="text-white text-sm">Tipos de<br>Madeira</div>
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@
     <!-- Video Background -->
     <div class="absolute inset-0 z-0">
         <video autoplay muted loop playsinline class="w-full h-full object-cover">
-            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+            <source src="https://cdn.pixabay.com/video/2023/06/11/166808-835670743_large.mp4" type="video/mp4">
             <!-- Fallback image if video doesn't load -->
             <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=sustainable%20lumber%20mill%20forest%20management%20wood%20processing%20facility%20aerial%20view&image_size=landscape_4_3" 
                  alt="Tronco Forte Facility" 
