@@ -262,11 +262,11 @@
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden md:flex space-x-8">
-                    <a href="/" class="nav-link <?= $_SERVER['REQUEST_URI'] === '/' ? 'active' : '' ?>">Início</a>
-                    <a href="/sobre" class="nav-link <?= strpos($_SERVER['REQUEST_URI'], '/sobre') === 0 ? 'active' : '' ?>">Sobre</a>
-                    <a href="/catalogo" class="nav-link <?= strpos($_SERVER['REQUEST_URI'], '/catalogo') === 0 ? 'active' : '' ?>">Catálogo</a>
-                    <a href="/blog" class="nav-link <?= strpos($_SERVER['REQUEST_URI'], '/blog') === 0 ? 'active' : '' ?>">Blog</a>
-                    <a href="/contato" class="nav-link <?= strpos($_SERVER['REQUEST_URI'], '/contato') === 0 ? 'active' : '' ?>">Contato</a>
+                    <a href="<?= $base_path ?: '/' ?>" class="nav-link <?= $_SERVER['REQUEST_URI'] === '/' ? 'active' : '' ?>">Início</a>
+                    <a href="<?= $base_path ?>/sobre" class="nav-link <?= strpos($_SERVER['REQUEST_URI'], '/sobre') === 0 ? 'active' : '' ?>">Sobre</a>
+                    <a href="<?= $base_path ?>/catalogo" class="nav-link <?= strpos($_SERVER['REQUEST_URI'], '/catalogo') === 0 ? 'active' : '' ?>">Catálogo</a>
+                    <a href="<?= $base_path ?>/blog" class="nav-link <?= strpos($_SERVER['REQUEST_URI'], '/blog') === 0 ? 'active' : '' ?>">Blog</a>
+                    <a href="<?= $base_path ?>/contato" class="nav-link <?= strpos($_SERVER['REQUEST_URI'], '/contato') === 0 ? 'active' : '' ?>">Contato</a>
                 </nav>
 
                 <!-- CTA Button -->

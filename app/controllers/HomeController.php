@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace app\controllers;
 
+use app\utils\UrlHelper;
 use flight\Engine;
 
 class HomeController
@@ -35,6 +36,8 @@ class HomeController
         // Set the content for the layout
         $content = $this->app->view()->fetch('home/index', $data);
         $data['content'] = $content;
+        $data['base_path'] = UrlHelper::getBasePath();
+        $data['url_helper'] = UrlHelper::class;
 
         // Render with layout
         $this->app->render('layout', $data);
