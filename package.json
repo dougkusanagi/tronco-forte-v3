@@ -1,0 +1,23 @@
+{
+  "name": "tronco-forte",
+  "version": "1.0.0",
+  "description": "Madeireira Tronco Forte - Website Institucional",
+  "scripts": {
+    "dev": "bun run build:css --watch",
+    "build": "bun run build:css",
+    "build:css": "tailwindcss -i ./src/input.css -o ./public/assets/css/style.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./public/assets/css/style.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^9.2.0",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6"
+  },
+  "dependencies": {
+    "alpinejs": "^3.13.3",
+    "lucide": "^0.294.0"
+  }
+}
